@@ -1,0 +1,11 @@
+list of applications not in other files:
+    apt  scrcpy
+    apt  tmux
+    apt  screen
+    web  gnirehtet (https://github.com/Genymobile/gnirehtet)
+    snap code (visual studio code/vscode)
+    snap slack
+    web  discord
+    web  zoom
+    apt  batcat (bat)
+

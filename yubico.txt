@@ -1,0 +1,33 @@
+Add the PPA for yubico stuff (following https://support.yubico.com/hc/en-us/articles/360016649039-Enabling-the-Yubico-PPA-on-Ubuntu)
+    sudo add-apt-repository ppa:yubico/stable
+    sudo apt update
+
+Things to install from the ppa
+    yubioath-desktop for otp codes on a yubikey
+
+may add two factor login at some point...
+
+some point is now!
+First do some thing to set u2f on linux (https://support.yubico.com/hc/en-us/articles/360013708900-Using-Your-U2F-YubiKey-with-Linux)
+
+    ensure libu2f-udev is installed (dpkg -s libu2f-udev) and install if necessary (sudo apt install libu2f-udev)
+    add udev rules for yubikeys, currently can be done with wget https://raw.githubusercontent.com/Yubico/libu2f-host/master/70-u2f.rules and moving the file to /etc/udev/rules.d/
+    reboot for file to take effect.
+
+Now following https://support.yubico.com/hc/en-us/articles/360016649099-Ubuntu-Linux-Login-Guide-U2F
+Also install libpam-u2f using apt
+
+Next add yubikeys to account
+    mkdir -p ~/.config/Yubico
+    insert a key
+    pamu2fcfg > ~/.config/Yubico/u2f_keys
+        enter a pin (0xDEF) and then touch the yubikey
+    insert a new key
+    pamu2fcfg -n >> ~/.config/Yubico/u2f_keys
+        enter a pin (0xDEF) and then touch the yubikey
+
+Lastly, require the different verification systems to check the yubikey.
+    (add to the pam file things)
+    in /etc/pam.d/sudo, /etc/pam.d/gdm-password, and /etc/pam.d/login,
+        add 'auth required pam_u2f.so' below the "@include common-auth" line
+

@@ -6,5 +6,21 @@ Following https://code.visualstudio.com/docs/remote/troubleshooting#_configuring
 
 places worth adding: other computers I own, knuth, github.
     add to computer/server using ssh-copy-id -i "path/to/key" "user@host"
-    path to key usually defaults to "~/.ssh/id_rsa.pub"
+    path to key usually defaults to "$HOME/.ssh/id_rsa.pub"
+
+TODO: add ssh config
+
+To set up as server:
+install the openssh-server package from apt.
+might automatically open the correct ports for ufw, but if not, this should do it: sudo ufw allow ssh/tcp
+
+at this point knowing the ip address will be extremely useful, can found by running ifconfig (may need to install net-tools via apt to get package).
+
+copy any ssh keys as above
+
+Then it would probably be good to remove password logins... and maybe root logins...
+edit the config file in /etc/ssh/sshd_config, changing the settings to below
+    PermitRootLogin No
+    PasswordAuthentication no
+then restart the ssh server: systemctl restart ssh
 

@@ -1,0 +1,9 @@
+Using ufw for firewall.
+should be installed by default, but not enabled.
+
+all commands for ufw must be made as root?
+ufw status to check whether it is running
+ufw allow ssh/tcp should allow ssh 
+ufw enable to turn on the wall
+ufw disable to turn off the wall
+most configuration should be in /etc/default/ufw and /etc/ufw/*

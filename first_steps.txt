@@ -1,0 +1,19 @@
+Assuming Ubuntu 20.04.1 has been successfully installed on system.
+
+After successful install, follow initial prompts (sign into accounts, ...)
+Also, allow system to update and reboot if needed following updates.
+
+First applications to install (using sudo apt install {repo} unless otherwise specified):
+    google-chrome-beta (download .deb from https://www.google.com/chrome/beta/, install with dpkg -i {path to downloaded file})
+    vim (use vim-gtk3 repository, for graphical support)
+    git (use git repository)
+
+Download vim configuration:
+    git clone https://github.com/archerD/.vim.git
+    source .vim/base.vim until plugins are setup.
+    See .vim/plugins.vim for details on setting up plugins.
+
+Set user info for git:
+    git config --global user.email "personal email"
+    git config --global user.name "name"
+

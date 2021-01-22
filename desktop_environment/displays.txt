@@ -1,0 +1,13 @@
+The programs arandr and autorandr are useful for managing the physical displays.
+Both are installable via apt.
+arandr displays a gui for configuring the monitorse
+autorandr automates the detection and application of monitor configurations.
+    once a configuration is setup, it can be saved with autorandr --save name
+    profiles can be loaded by autorandr --load name, or autochanged by autorandr -c
+    configs are saved in ~/.config/autorandr/
+    post and pre hooks can be added to this directory as well
+    for example, the file ~/.config/autorandr/postswitch could have the contents
+        #!/bin/sh
+        feh --bg-scale /home/archerd/bitma2p.png
+    and this script would be run after everytime autorandr changes the displays.
+    individual configs can also have hooks, by adding a similar file inside the particular configurations directory.

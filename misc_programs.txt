@@ -8,4 +8,6 @@ list of applications not in other files:
     web  discord
     web  zoom
     apt  batcat (bat)
+    apt  gparted
+    apt  latex (texlive-full)
 

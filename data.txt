@@ -1,0 +1,6 @@
+First, find the disks/partitions to be used and format as desired (ntfs if dualbooting with windows)
+This can be done using Disks, or in windows if dual booting.
+Make sure to set up the auto mounting of the drive.
+Can be done in Disks, or by editing the /etc/fstab file
+
+To synchronize data between 

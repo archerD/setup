@@ -7,8 +7,25 @@ Following https://code.visualstudio.com/docs/remote/troubleshooting#_configuring
 places worth adding: other computers I own, knuth, github.
     add to computer/server using ssh-copy-id -i "path/to/key" "user@host"
     path to key usually defaults to "$HOME/.ssh/id_rsa.pub"
+    will have to log into the server using password...
 
-TODO: add ssh config
+Next create a ssh config file, in ~/.ssh/config
+Example contents:
+    Host knuth
+        HostName knuth.cs.hmc.edu
+        User deflores
+        ForwardAgent yes
+        ForwardX11Trusted yes
+
+    # desktop
+    Host desktop
+        HostName 192.168.1.216
+        User archerd
+        ForwardAgent yes
+        ForwardX11Trusted yes
+
+    Host *
+
 
 To set up as server:
 install the openssh-server package from apt.

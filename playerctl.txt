@@ -1,0 +1,13 @@
+Currently need to build from source to get enough features from playerctld
+source is at https://github.com/altdesktop/playerctl
+
+need to install meson and ninja build tools, installable via apt (meson ninja-build)
+
+build dependencies include gobject-introspection libglib2.0-dev libgirepository1.0-dev gtk-doc-tools
+
+build commands are 
+    meson mesonbuild
+    sudo ninja -C mesonbuild install
+
+Ensure there is no leftover stuff from an apt install of playerctl
+

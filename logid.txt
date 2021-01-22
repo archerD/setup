@@ -1,0 +1,18 @@
+A driver for logitech mouse.  Allows for configuration as well.
+
+the code can be downloaded from https://github.com/PixlOne/logiops.
+Dependencies (apt): cmake libevdev-dev libudev-dev libconfig++-dev (or whatever libconfig is)
+
+build commands:
+    mkdir build
+    cd build
+    cmake ..
+    make
+
+install with sudo make install
+set daemon to autostart with sudo systemctl enable logid, with --now flag to start the daemon now.
+
+The config file is default at /etc/logid.cfg.
+Recommend to make that file a symlink to the desired config.
+Current config is in xconfigfiles repo
+

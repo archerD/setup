@@ -8,14 +8,6 @@ First applications to install (using sudo apt install {repo} unless otherwise sp
     vim (use vim-gtk3 repository, for graphical support)
     git (use git repository)
 
-Download vim configuration:
-    git clone https://github.com/archerD/.vim.git
-    source .vim/base.vim until plugins are setup.
-    See .vim/plugins.vim for details on setting up plugins.
-        short, git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-        then run PluginInstall in vim
-        for YouCompleteMe, install dependencies via apt, build-essential cmake python3-dev mono-complete golang nodejs default-jdk npm, then run python3 install.py --all
-
 Set user info for git:
     git config --global user.email "personal email"
     git config --global user.name "name"

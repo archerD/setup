@@ -1,0 +1,30 @@
+Assuming vim has been installed.
+Can be installed using apt, preferably the vim-gtk3 package
+
+Download vim configuration:
+    git clone https://github.com/archerD/.vim.git
+    use .vim/base.vim until plugins are setup.
+    This can be done by either adding source .vim/base.vim to a vimrc,
+    or symlinking the vimrc file to .vim/base.vim
+
+Configure editor/terminal??
+
+Installing plugins:
+    First, install vundle:
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    Then source .vim/plugins.vim, either in vim, or in the vimrc
+    then run :PluginInstall in vim, which should go through and install all the listed plugins.
+    Once this is done, source-all.vim can be used instead of base.vim either as the target of the vimrc symlink or the file sourced in the vimrc
+
+YouCompleteMe setup:
+    YouCompleteMe has a compiled component which vundle does not compile.
+    First, the dependencies need to be installed:
+        build-essential cmake for the build tools, 
+        python3-dev mono-complete golang nodejs default-jdk npm for the frameworks.
+    Then cd to .vim/bundle/YouCompleteMe, and run python3 install.py --all
+
+    This finishes the default setup.
+    
+Adding Haskell support for YouCompleteMe:
+    TODO
+

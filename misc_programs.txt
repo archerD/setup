@@ -10,4 +10,6 @@ list of applications not in other files:
     apt  batcat (bat)
     apt  gparted
     apt  latex (texlive-full)
+    snap bpytop (remember to grant full permissions by running sudo snap connect bpytop:{mount-observe,network-control,hardware-observe,system-observe,process-control,physical-memory-observe)
+    apt  ipython3
 

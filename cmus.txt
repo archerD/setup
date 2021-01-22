@@ -1,0 +1,28 @@
+command line music player
+Need to build from source to get mpris support.
+Download source from https://github.com/cmus/cmus
+
+build dependencies (installable via apt): 
+bash-completion libao-dev libasound2-dev libavcodec-dev \
+            libavformat-dev libswresample-dev libcddb2-dev libcdio-cdda-dev \
+            libcue-dev libdiscid-dev libfaad-dev libflac-dev libjack-dev \
+            libmad0-dev libmodplug-dev libmpcdec-dev libncursesw5-dev \
+            libopusfile-dev libpulse-dev libroar-dev libsamplerate0-dev \
+            libsndio-dev libvorbis-dev libwavpack-dev libsystemd-dev pkg-config
+?
+
+build instructions:
+./configure # --help to see options, otherwise generates the config.mk file with the features configured
+make
+make install # needs root access
+
+Configuration stuff:
+A theme exists in xconfigfiles... but the night theme is pretty good.
+
+Detachable cmus via screen:
+add alias to ~/.profile or .bashrc or whatever file holds your aliases:
+    alias cmus='screen -q -r -D cmus || screen -S cmus $(which cmus)'
+run command in cmus:
+    :bind -f common q shell screen -d cmus
+
+

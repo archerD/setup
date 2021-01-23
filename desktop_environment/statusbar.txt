@@ -1,0 +1,15 @@
+The statusbar of choice is xmobar.
+xmobar can be installed using cabal.
+Cabal can be installed via apt and the cabal-install repository
+Once it is installed, run cabal update to get the list of packages,
+and then cabal install xmobar --flags="all_extensions"
+
+Once xmobar is installed, the configuration is in xconfigfiles, link to $HOME.
+The xmonad.hs config file in xconfigfiles already automatically launches xmonad, so that should be good to go.
+
+Things needed by xmobar:
+One thing is that the padding-icon.sh needs to be made available.
+This file is in the xmobar repository, at https://github.com/jaor/xmobar.
+
+Another thing is gsimplecal, availible from repo gsimplecal via apt.
+

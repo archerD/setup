@@ -1,0 +1,12 @@
+xmonad is a tiling window manager.
+it can be installed by xmonad package, and the config packages can be installed via libghc-xmonad-dev, libghc-xmonad-contrib-dev, libghc-xmonad-extra-dev.
+
+the config file is in xconfigfiles, and belongs in ~/.xmonad/xmonad.hs
+after a reboot, the window manager can be selected just before logging in.
+the .xsessionrc in xconfigfiles also auto launches xmonad for the user archerd (along with a bunch of other things... which are discussed in the tray.txt)
+
+Some additional software that should be installed for xmonad to function fully is dmenu and gmrun.
+These can be installed via apt from the repos suckless-tools and gmrun.
+
+One last thing to force numlock to start on upon login is numlockx, installable via apt from repo numlockx.
+

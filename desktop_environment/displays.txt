@@ -11,3 +11,15 @@ autorandr automates the detection and application of monitor configurations.
         feh --bg-scale /home/archerd/bitma2p.png
     and this script would be run after everytime autorandr changes the displays.
     individual configs can also have hooks, by adding a similar file inside the particular configurations directory.
+
+    autorandr -c is called by the .xsessionrc in xconfigfiles
+
+Other programs for the displays are
+    feh, for setting the background image, and
+    xscreensaver, for a screensaver and screening locking.
+both are installable via apt.
+both are called by the .xsessionrc in xconfigfiles
+
+installing just xscreensaver gives a working xscreensaver, however, additional screensavers can be downloaded by installing the following repos from apt: xscreensaver-gl xscreensaver-data-extra
+xscreensaver can be configured by running xscreensaver-demo
+

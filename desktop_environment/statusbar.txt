@@ -3,6 +3,7 @@ xmobar can be installed using cabal.
 Cabal can be installed via apt and the cabal-install repository
 Once it is installed, run cabal update to get the list of packages,
 and then cabal install xmobar --flags="all_extensions"
+may have to add --installdir=$HOME/.cabal/bin/ to previous command.
 
 Once xmobar is installed, the configuration is in xconfigfiles, link to $HOME.
 The xmonad.hs config file in xconfigfiles already automatically launches xmonad, so that should be good to go.

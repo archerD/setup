@@ -1,6 +1,6 @@
 list of applications not in other files:
     apt  scrcpy
-    apt  tmux
+    apt  tmux (config in xconfigfiles)
     apt  screen
     web  gnirehtet (https://github.com/Genymobile/gnirehtet)
     snap code (visual studio code/vscode)
@@ -10,6 +10,6 @@ list of applications not in other files:
     apt  batcat (bat)
     apt  gparted
     apt  latex (texlive-full)
-    snap bpytop (remember to grant full permissions by running sudo snap connect bpytop:{mount-observe,network-control,hardware-observe,system-observe,process-control,physical-memory-observe)
+    snap bpytop (remember to grant full permissions, run 'snap info bpytop' for more info)
     apt  ipython3
 

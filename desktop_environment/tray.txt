@@ -8,3 +8,5 @@ xfce4-power-manager, blueman-applet, pasystray, kdeconnect-indicator, and redshi
 
 nm-applet is preinstalled, instructions for yubioath-desktop are in yubico.txt.
 
+pasystray integrates nicely with the following utilities: pavumeter, pavucontrol, paprefs; installable via apt.
+

@@ -10,6 +10,6 @@ Download an appropriate release file, extract it and add an alias for the gtk ve
 Run unison, and it will eventually pop open a gui.
 Then create a profile.  the host can be an ssh host. add a path variable to only synchronize some parts of the roots.
 
-Directories worth sync
+Directories worth syncing:
 Desktop Documents Pictures Videos Downloads Music 
 

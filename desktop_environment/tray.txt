@@ -4,7 +4,7 @@ The .xsessionrc file in xconfigfiles already starts up trayer upon login
 The .xsessionrc file is also configured to launch the following applets:
 xfce4-power-manager, nm-applet, blueman-applet, pasystray, kdeconnect-indicator, yubioath-desktop, and redshift-gtk.
 
-xfce4-power-manager, blueman-applet, pasystray, and redshift-gtk are installable via apt, using repos xfce4-power-manager, blueman, pasystray, and redshift-gtk, respectively.
+xfce4-power-manager, blueman-applet, pasystray, kdeconnect-indicator, and redshift-gtk are installable via apt, using repos xfce4-power-manager, blueman, pasystray, kdeconnect, and redshift-gtk, respectively.
 
 nm-applet is preinstalled, instructions for yubioath-desktop are in yubico.txt.
 

@@ -1,7 +1,15 @@
 First, find the disks/partitions to be used and format as desired (ntfs if dualbooting with windows)
 This can be done using Disks, or in windows if dual booting.
 Make sure to set up the auto mounting of the drive.
-Can be done in Disks, or by editing the /etc/fstab file
+Can be done in Disks, or by editing the /etc/fstab file.
+
+    Editing the fstab file directly would look like adding the line
+UUID=3268BD0B68BCCF3B /mnt/Data auto nosuid,nodev,nofail,x-gvfs-show 0 0
+    to the file.
+
+    In disks, this can be done by selecting the partition, then going to the partition settings and opening the 'Edit Mount Options..." menu.
+    From this menu, the user session defaults can be disabled, and then the settings modified.
+    (Doing this adds a line to /etc/fstab like the line above
 
 To synchronize data between computers, use unison.
 Source is at https://github.com/bcpierce00/unison, however, prebuilt releases from the releases tab should be sufficient.

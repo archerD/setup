@@ -1,5 +1,0 @@
-Currently using bash as my shell of choice, may change in the future.
-The default .bashrc has a lot of helpful aliases for coloring things, and ls shortcuts.
-
-.bash_aliases in xconfigfiles has some other aliases I use, including for some of the programs installed in other sections.
-

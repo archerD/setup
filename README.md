@@ -13,7 +13,7 @@ From there, good places to go are
 * firewall.txt
 * vim.txt
 * desktop_environment/
-* shell.txt
+* shell_terminal.txt
 * logid.txt
 
 Also, reference misc_programs.txt for various programs to install.
@@ -21,4 +21,24 @@ Also, reference misc_programs.txt for various programs to install.
 The guide will reference several other repositories:
 * archerD/dotfiles, or xconfigfiles, contains a variety of configuration files I use
 * archerD/.vim, contains my vim config, and some related files
+
+### All files:
+* cmus.txt
+* data.txt
+* desktop_environment/
+    * displays.txt
+    * launcher.txt
+    * statusbar.txt
+    * tray.txt
+    * xmonad.txt
+* firewall.txt
+* first_steps.txt
+* logid.txt
+* misc_programs.txt
+* playerctl.txt
+* README.md
+* shell_terminal.txt
+* ssh.txt
+* vim.txt
+* yubico.txt
 

@@ -1,6 +1,6 @@
 The programs arandr and autorandr are useful for managing the physical displays.
 Both are installable via apt.
-arandr displays a gui for configuring the monitorse
+arandr displays a gui for configuring the monitors
 autorandr automates the detection and application of monitor configurations.
     once a configuration is setup, it can be saved with autorandr --save name
     profiles can be loaded by autorandr --load name, or autochanged by autorandr -c
@@ -22,4 +22,7 @@ both are called by the .xsessionrc in xconfigfiles
 
 installing just xscreensaver gives a working xscreensaver, however, additional screensavers can be downloaded by installing the following repos from apt: xscreensaver-gl xscreensaver-data-extra
 xscreensaver can be configured by running xscreensaver-demo
+(the xmatrix screensaver, with a low frame rate and mid density is nice)
+
+The redshift program provides a night light mode, see tray.txt.
 

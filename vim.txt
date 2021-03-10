@@ -3,11 +3,17 @@ Can be installed using apt, preferably the vim-gtk3 package
 
 Download vim configuration:
     git clone https://github.com/archerD/.vim.git
+Alternative download:
+    clone the dotfiles repository: git clone git@github.com:archerD/dotfiles
+    and run the install script: cd dotfiles && ./install
+After download:
     use .vim/base.vim until plugins are setup.
     This can be done by either adding source .vim/base.vim to a vimrc,
     or symlinking the vimrc file to .vim/base.vim
+    The vimrc file can usually be either ~/.vimrc or ~/.vim/vimrc.
 
 Configure editor/terminal??
+	(set -o vi)
 
 Installing plugins:
     First, install vundle:
@@ -18,7 +24,7 @@ Installing plugins:
 
 YouCompleteMe setup:
     YouCompleteMe has a compiled component which vundle does not compile.
-    First, the dependencies need to be installed:
+    First, the dependencies need to be installed (via apt):
         build-essential cmake for the build tools, 
         python3-dev mono-complete golang nodejs default-jdk npm for the frameworks.
     Then cd to .vim/bundle/YouCompleteMe, and run python3 install.py --all

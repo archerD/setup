@@ -11,8 +11,16 @@ autorandr automates the detection and application of monitor configurations.
         feh --bg-scale /home/archerd/bitma2p.png
     and this script would be run after everytime autorandr changes the displays.
     individual configs can also have hooks, by adding a similar file inside the particular configurations directory.
+    the dotfiles repo should install a postswitch hook for autorandr.
 
     autorandr -c is called by the .xsessionrc in dotfiles
+
+High Resolution displays:
+    Stuff is wierd.
+    Might be able to get away with just scaling with xrandr, might not.
+    If not, refer to https://wiki.archlinux.org/index.php/HiDPI#X_Resources.
+    dpi can be estimated from https://dpi.lv, or xdpyinfo might give the value.
+
 
 Other programs for the displays are
     feh, for setting the background image, and
@@ -25,4 +33,9 @@ xscreensaver can be configured by running xscreensaver-demo
 (the xmatrix screensaver, with a low frame rate and mid density is nice)
 
 The redshift program provides a night light mode, see tray.txt.
+
+One other class of programs related to displays are compositors.
+Programs like zoom expect a compositor to be running for annotations.
+A compositor that I use is compton (installable via apt).
+It can be started when needed and then killed afterwards.
 

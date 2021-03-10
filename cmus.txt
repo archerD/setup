@@ -20,9 +20,9 @@ Configuration stuff:
 A theme exists in dotfiles... but the night theme is pretty good.
 
 Detachable cmus via screen:
-add alias to ~/.profile or .bashrc or whatever file holds your aliases:
+This does require screen installed.
+add alias to ~/.profile or .bashrc or whatever file holds your aliases (in bash_aliases from dotfiles):
     alias cmus='screen -q -r -D cmus || screen -S cmus $(which cmus)'
 run command in cmus:
     :bind -f common q shell screen -d cmus
-
 

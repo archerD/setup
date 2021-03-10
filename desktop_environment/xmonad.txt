@@ -1,5 +1,5 @@
 xmonad is a tiling window manager.
-it can be installed by xmonad package, and the config packages can be installed via libghc-xmonad-dev, libghc-xmonad-contrib-dev, libghc-xmonad-extra-dev.
+it can be installed by xmonad package, and the config packages can be installed via libghc-xmonad-dev, libghc-xmonad-contrib-dev, libghc-xmonad-extras-dev.
 
 the config file is in dotfiles, and belongs in ~/.xmonad/xmonad.hs
 after a reboot, the window manager can be selected just before logging in.

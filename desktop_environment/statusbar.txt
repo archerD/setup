@@ -4,13 +4,14 @@ Cabal can be installed via apt and the cabal-install repository
 Once it is installed, run cabal update to get the list of packages,
 and then cabal install xmobar --flags="all_extensions"
 may have to add --installdir=$HOME/.cabal/bin/ to previous command.
+May also need to install a xpm library, such as apt install libxpm-dev
 
 Once xmobar is installed, the configuration is in dotfiles, link to $HOME.
 The xmonad.hs config file in dotfiles already automatically launches xmonad, so that should be good to go.
 
 Things needed by xmobar:
 One thing is that the padding-icon.sh needs to be made available.
-This file is in the xmobar repository, at https://github.com/jaor/xmobar.
+This file is in the xmobar repository, at https://github.com/jaor/xmobar, and is also in the dotfiles repo.
 
 Another thing is gsimplecal, availible from repo gsimplecal via apt.
 

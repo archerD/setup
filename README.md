@@ -12,7 +12,7 @@ From there, good places to go are
 * ssh.txt
 * firewall.txt
 * vim.txt
-* desktop_environment/
+* desktop_environment/README.md
 * shell_terminal.txt
 * logid.txt
 
@@ -27,6 +27,7 @@ The guide will reference several other repositories:
 * cmus.txt
 * data.txt
 * desktop_environment/
+    * README.md
     * displays.txt
     * launcher.txt
     * statusbar.txt

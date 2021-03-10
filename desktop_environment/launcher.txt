@@ -1,3 +1,5 @@
 This is a stub file to remember the launcher gnome-pie.
 It is installable via apt, and could be useful as a graphical app launcher.
 
+On an other note, the 'built-in' launchers for xmonad are dmenu and gmrun, from apt repos suckless-tools and gmrun.
+

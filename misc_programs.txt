@@ -3,9 +3,9 @@ list of applications not in other files:
     apt  tmux (config in dotfiles)
     apt  screen
     web  gnirehtet (https://github.com/Genymobile/gnirehtet)
-    snap code (visual studio code/vscode)
-    snap slack
-    web  discord
+    snap code (--classic) (visual studio code/vscode)
+    snap slack (--classic)
+    snap discord (snap is unofficial, use web version for official)
     web  zoom
     apt  batcat (bat)
     apt  gparted

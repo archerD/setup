@@ -14,5 +14,5 @@ set daemon to autostart with sudo systemctl enable logid, with --now flag to sta
 
 The config file is default at /etc/logid.cfg.
 Recommend to make that file a symlink to the desired config.
-Current config is in xconfigfiles repo
+Current config is in dotfiles repo
 

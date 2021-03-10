@@ -19,7 +19,8 @@ From there, good places to go are
 Also, reference misc_programs.txt for various programs to install.
 
 The guide will reference several other repositories:
-* archerD/dotfiles, or xconfigfiles, contains a variety of configuration files I use
+* archerD/dotfiles, contains a variety of configuration files I use
+    * the dot files can be automatically installed, see the dotfiles repo's readme for details.
 * archerD/.vim, contains my vim config, and some related files
 
 ### All files:

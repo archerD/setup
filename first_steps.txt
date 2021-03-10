@@ -12,3 +12,7 @@ Set user info for git:
     git config --global user.email "personal email"
     git config --global user.name "name"
 
+Install dot files:
+    The repo with dotfiles can be downloaded from github: https://github.com/archerD/dotfiles
+    Then, run './install' from inside the dotfiles repo to install the dot files.
+

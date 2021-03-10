@@ -17,7 +17,7 @@ make
 make install # needs root access
 
 Configuration stuff:
-A theme exists in xconfigfiles... but the night theme is pretty good.
+A theme exists in dotfiles... but the night theme is pretty good.
 
 Detachable cmus via screen:
 add alias to ~/.profile or .bashrc or whatever file holds your aliases:

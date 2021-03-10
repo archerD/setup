@@ -1,6 +1,6 @@
 list of applications not in other files:
     apt  scrcpy
-    apt  tmux (config in xconfigfiles)
+    apt  tmux (config in dotfiles)
     apt  screen
     web  gnirehtet (https://github.com/Genymobile/gnirehtet)
     snap code (visual studio code/vscode)

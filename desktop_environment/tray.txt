@@ -1,5 +1,5 @@
 The tray I use is trayer, installable via apt from repo trayer.
-The .xsessionrc file in xconfigfiles already starts up trayer upon login
+The .xsessionrc file in dotfiles already starts up trayer upon login
 
 The .xsessionrc file is also configured to launch the following applets:
 xfce4-power-manager, nm-applet, blueman-applet, pasystray, kdeconnect-indicator, yubioath-desktop, and redshift-gtk.

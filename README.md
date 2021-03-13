@@ -29,7 +29,7 @@ The guide will reference several other repositories:
 * desktop_environment/
     * README.md
     * displays.txt
-    * launcher.txt
+    * launchers.txt
     * statusbar.txt
     * tray.txt
     * xmonad.txt

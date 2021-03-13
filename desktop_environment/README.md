@@ -15,6 +15,6 @@ Sets up a statusbar, xmobar, that integrates well with xmonad.
 ### tray.txt
 Adds a tray, trayer, and describes several applets that populate the tray
 
-### launcher.txt 
+### launchers.txt 
 Describes the launcher gnome-pies, and other launchers.
 

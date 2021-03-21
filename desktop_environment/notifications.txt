@@ -1,0 +1,33 @@
+Track notification daemon stuff.
+
+The simple option: sudo apt install notification-daemon,
+use the /usr/lib/notification-daemon/notification-daemon executable.
+The downside: ugly
+The upside: simple, and has a tray icon when notifications present.
+
+The complicated option: https://github.com/phuhl/linux_notification_center.
+Simpler version: use apt to install haskell-stack and libdbus-1-dev.  gtk3 and gobject-introspection-runtime should already be installed.
+Then download the repo and run sudo make install.
+To build from source: install the above packages. also install libxml2-dev libgtk-3-dev.
+May not work...
+But if it does, it has a notification center, which is cool.
+
+The other simple option: sudo apt install notify-osd
+use the /usr/lib/x86_64-linux-gnu/notify-osd (found by running dpkg -L notify-osd)
+Less ugly than notification-daemon, but no customization (that I can find)
+
+The other complicated option: dunst (installable via apt, but that version is old, prefer git version).
+repo: https://github.com/dunst-project/dunst.git
+build dependencies: dbus libxinerama libxrandr libxft libxss glib pango/cairo libgtk3.0 libnotify
+installable via apt: libdbus-1-dev libxinerama-dev libxrandr-dev libx11-dev libxss-dev libglib2.0-dev libpango1.0-dev libgtk-3-dev libnotify-dev
+build with make && sudo make install
+should be started automatically by systemctl
+    Can check by running systemctl status --user dunst, or start by running systemctl restart --user dunst
+    May complain about being masked... to unmask, go to the noted file, which should be a link to /dev/null, or similar, and delete the link.
+    May need to run systemctl --user daemon-reload, but then the first systemctl command should succeed.
+integrates with dmenu when multiple actions availble for a notification, and contains dunstify for creating notifications, and dunstctl for managing notifications
+TODO: make it pause/unpause on screen lock/unlock, and configure keyboard shortcuts.
+https://dunst-project.org/
+
+TODO: last option to explore is twmn: https://github.com/sboli/twmn
+

@@ -18,3 +18,6 @@ Adds a tray, trayer, and describes several applets that populate the tray
 ### launchers.txt 
 Describes the launcher gnome-pies, and other launchers.
 
+### notifications.txt
+Describes my exploration of notification daemons, programs which show notifications from programs.
+

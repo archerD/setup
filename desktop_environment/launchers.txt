@@ -1,7 +1,6 @@
 This file describes the application launchers I use.
 These include gnome-pie, yeganesh, and dmenu.
 
-It is installable via apt, and could be useful as a graphical app launcher.
 gnome-pie and dmenu are installable via apt from repositories gnome-pie and suckless-tools.
 yeganesh is a wrapper for dmenu that is installable from cabal: cabal install yeganesh.
 Then, yeganesh needs to be added to the path, either by adding ~/.cabal/bin to the path or linking yeganesh in ~/bin (prefered).
@@ -10,4 +9,6 @@ The advantage of yeganesh is that it shows frequently used things first, as oppo
 The config files for gnome-pie is in the dotfiles repo.
 Yeganesh will generate it's own frequency map over time.
 gnome-pie is linked into xmobar for some of the menus, and yeganesh and dmenu are bound to keys in xmonad.
+
+TODO: Another thing to explore: Rofi (installable via apt)
 

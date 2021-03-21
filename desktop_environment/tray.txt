@@ -1,5 +1,5 @@
-The tray I use is trayer, installable via apt from repo trayer.
-The .xsessionrc file in dotfiles already starts up trayer upon login
+The tray I use is stalonetray, installable via apt from repo stalonetray.
+The .xsessionrc file in dotfiles already starts up stalonetray upon login.
 
 The .xsessionrc file is also configured to launch the following applets:
 xfce4-power-manager, nm-applet, blueman-applet, pasystray, kdeconnect-indicator, yubioath-desktop, and redshift-gtk.
@@ -9,4 +9,6 @@ xfce4-power-manager, blueman-applet, pasystray, kdeconnect-indicator, and redshi
 nm-applet is preinstalled, instructions for yubioath-desktop are in ../yubico.txt.
 
 pasystray integrates nicely with the following utilities: pavumeter, pavucontrol, paprefs; installable via apt.
+
+(installable via apt, see https://kolbusa.github.io/stalonetray/ and https://beginners-guide-to-xmonad.readthedocs.io/configure_stalonetray.html for config hints.)
 

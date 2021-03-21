@@ -12,4 +12,5 @@ list of applications not in other files:
     apt  latex (texlive-full)
     snap bpytop (remember to grant full permissions, run 'snap info bpytop' for more info)
     apt  ipython3
+    apt  ranger
 

@@ -2,7 +2,7 @@ list of applications not in other files:
     apt  scrcpy
     apt  tmux (config in dotfiles)
     apt  screen
-    web  gnirehtet (https://github.com/Genymobile/gnirehtet)
+    exec gnirehtet (https://github.com/Genymobile/gnirehtet)
     snap code (--classic) (visual studio code/vscode)
     snap slack (--classic)
     snap discord (snap is unofficial, use web version for official)
@@ -13,4 +13,11 @@ list of applications not in other files:
     snap bpytop (remember to grant full permissions, run 'snap info bpytop' for more info)
     apt  ipython3
     apt  ranger
+    exec clustergit
+
+key:
+    apt  installable via apt, using the given name (sudo apt install)
+    snap installable via snap, using the given name (sudo snap install)
+    exec included in archerD/executables, link to the executable from somewhere in the path (cd ~/bin && ln -s)
+    web  must be downloaded from the web and installed manually (likely via dpkg -i)
 

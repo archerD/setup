@@ -32,5 +32,17 @@ YouCompleteMe setup:
     This finishes the default setup.
     
 Adding Haskell support for YouCompleteMe:
-    TODO
+    To do this we need to install and setup haskell-language-server (https://github.com/haskell/haskell-language-server)
+    Since I don't currently use ghcup for haskell stuff, we will install from source.
+    Make sure cabal is installed (installable via apt from cabal-install)
+    Then install other dependencies: sudo apt install libicu-dev libncurses-dev libgmp-dev zlib1g-dev
+    Then get the source code: git clone https://github.com/haskell/haskell-language-server --recurse-submodules
+    Then in the repo, use ./cabal-hls-install script.
+    Pass the help command to see options.  The option to probably use is hls: ./cabal-hls-install hls
+    May take some time to get all the packages it needs the first time it is run.
+    If cabal is out of date, update cabal using: cabal install Cabal cabal-install
+    Once the build finishes, link to the executables from somewhere in the path.
+
+    This provides the LSP for haskell, but YCM still needs to be setup to use it.
+    This setup is in .vim/plugin-settings.vim.
 

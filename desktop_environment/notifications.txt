@@ -26,7 +26,8 @@ should be started automatically by systemctl
     May complain about being masked... to unmask, go to the noted file, which should be a link to /dev/null, or similar, and delete the link.
     May need to run systemctl --user daemon-reload, but then the first systemctl command should succeed.
 integrates with dmenu when multiple actions availble for a notification, and contains dunstify for creating notifications, and dunstctl for managing notifications
-TODO: make it pause/unpause on screen lock/unlock, and configure keyboard shortcuts.
+TODO: make it pause/unpause on screen lock/unlock, and configure/document keyboard shortcuts.
+TODO: use rofi instead of dmenu
 https://dunst-project.org/
 
 TODO: last option to explore is twmn: https://github.com/sboli/twmn

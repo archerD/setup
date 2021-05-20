@@ -14,6 +14,8 @@ list of applications not in other files:
     apt  ipython3
     apt  ranger
     exec clustergit
+    apt  cmatrix
+         lsd (exploring)
 
 key:
     apt  installable via apt, using the given name (sudo apt install)

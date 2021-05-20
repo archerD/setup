@@ -1,6 +1,7 @@
 # Desktop Environment
 The files in this folder document how to setup my desktop environment.
 This environment centers around the tiling window manager [Xmonad](xmonad.org).
+Before installing Haskell things, see ../haskell.txt.
 
 ## File Breakdown
 ### displays.txt

@@ -19,10 +19,12 @@ make install # needs root access
 Configuration stuff:
 A theme exists in dotfiles... but the night theme is pretty good.
 
-Detachable cmus via screen:
-This does require screen installed.
+Detachable cmus via tmux (from https://github.com/cmus/cmus/wiki/detachable-cmus): ! Not currently using this !
+This does require tmux installed.
 add alias to ~/.profile or .bashrc or whatever file holds your aliases (in bash_aliases from dotfiles):
-    alias cmus='screen -q -r -D cmus || screen -S cmus $(which cmus)'
+    alias cmus='tmux attach-session -t cmus || tmux new-session -A -D -s cmus "$(which cmus)"'
 run command in cmus:
-    :bind -f common q shell screen -d cmus
+    :bind -f common q shell tmux detach-client
+
+Currently the shell aliases have an alias for cmus to be launched using abduco.
 

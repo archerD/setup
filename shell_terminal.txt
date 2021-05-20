@@ -6,16 +6,7 @@ The default .bashrc has a lot of helpful aliases for coloring things, and ls sho
 The default .bashrc should load ~/.bash_aliases if exists.
 
 # terminal emulator
-Currently using the ubuntu default, gnome terminal.
-Works fine for my needs. 
-
-On colors: Using the White on black scheme, with XTerm palatte.
-To change, go to the preferences, then under profiles, select the current profile, then go to the colors tab.
-Deselect 'use colors from system theme' and set the the scheme.
-Then at the bottom, change the Palette to use the XTerm scheme.
-Consider checking 'Show bold text in bright colors'.
-
-Experimenting with the kitty terminal emulator.
+Currently migrating to the kitty terminal emulator.
 There is a version availible from apt (package is kitty) however it is out of date.
 To get latest version, run: curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 Then, add a link to ~/.local/kitty.app/bin/kitty somewhere in the path.
@@ -28,8 +19,23 @@ For desktop integration (known to menus and what not), do the following:
 
 Config is in dotfiles.
 
+
+Was using the ubuntu default, gnome terminal.
+Worked fine for my needs, but I wanted font ligitures, and a portable config file is definitely a plus for kitty as well. 
+
+On colors: Using the White on black scheme, with XTerm palatte.
+To change, go to the preferences, then under profiles, select the current profile, then go to the colors tab.
+Deselect 'use colors from system theme' and set the the scheme.
+Then at the bottom, change the Palette to use the XTerm scheme.
+Consider checking 'Show bold text in bright colors'.
+
 Font:
     JetBrains Mono looks nice, to install run
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
     (or see https://github.com/JetBrains/JetBrainsMono)
+
+# Abduco (attach/detach support)
+Was using tmux (installable via apt from tmux, minimal config file with dotfiles)
+Currently migrating to Abduco.
+To install, clone repo (http://github.com/martanne/abduco.git), cd into repo, and run the following: ./configure && make && sudo make install
 

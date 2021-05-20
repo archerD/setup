@@ -1,0 +1,19 @@
+The keyboard should be plug-n-play, this is more setup for how to flash and change config on the keyboard, if using a keyboard using QMK firmware.
+This will mostly be borrowed from https://docs.qmk.fm/#/newbs
+
+# Setting up environment:
+First, install git and python3-pip packages from apt (likely already installed though).
+Then install qmk cli, via the command: python3 -m pip install --user qmk.
+This will probably install the executables to ~/.local/bin/, which will be added to the path on next login, or can be added manually.
+Then setup qmk, via the command: qmk setup
+Probably want to add the arguments --home /home/archerd/repos/qmk_firmware and archerD/qmk_firmware, so the complete command would be qmk setup --home /home/archerd/repos/qmk_firmware archerD/qmk_firmware
+Alternatively, use the following for zsa stuff: qmk setup --home /home/archerd/repos/zsa_firmware zsa/qmk_firmware -b firmware20
+If it complains about udev rules, the command given can be run to fix it.
+
+Now, it can be tested with something like qmk compile -kb crkbd -km default
+The following command can be used to create new layouts: qmk new-keymap -kb <keyboard_name>
+The qmk compile command is also used to generate the firmware in general.
+
+To flash, use qmk flash -kb <my_keyboard> -km <my_keymap>
+For elite c controllers, the bootloader may need to be specified, by adding the arguments -bl dfu
+

@@ -22,6 +22,8 @@ The guide will reference several other repositories:
 * archerD/dotfiles, contains a variety of configuration files I use
     * the dot files can be automatically installed, see the dotfiles repo's readme for details.
 * archerD/.vim, contains my vim config, and some related files
+Note: if a file says to link/symlink to somewhere in the path, ~/bin is probably the place to put the link.
+    It should be added to the path by the default ~/.profile script
 
 ### All files:
 * cmus.txt
@@ -35,6 +37,8 @@ The guide will reference several other repositories:
     * xmonad.txt
 * firewall.txt
 * first_steps.txt
+* haskell.txt
+* keyboard.txt
 * logid.txt
 * misc_programs.txt
 * playerctl.txt

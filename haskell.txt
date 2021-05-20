@@ -1,0 +1,33 @@
+Setting up haskell tools.
+
+Cabal:
+boot strap process by sudo apt install cabal-install
+This will install some stuff.
+Then update cabal:
+cabal update && cabal install Cabal cabal-install
+Symlink the created cabal executable to the path.
+
+Xmonad:
+Install as 
+cabal install --lib xmonad xmonad-contrib xmonad-extras
+cabal install xmonad # installs the xmonad executable
+Symlink the created xmonad executable to the path
+
+Xmobar:
+cabal install --lib xmobar --flags="all_extensions"
+cabal install xmobar --flags="all_extensions" # installs the xmobar executable
+
+HLS:
+    To do this we need to install and setup haskell-language-server (https://github.com/haskell/haskell-language-server)
+    Since I don't currently use ghcup for haskell stuff, we will install from source.
+    Install other dependencies: sudo apt install libicu-dev libncurses-dev libgmp-dev zlib1g-dev
+    Then get the source code: git clone https://github.com/haskell/haskell-language-server --recurse-submodules
+    Then in the repo, use ./cabal-hls-install script.
+    Pass the help command to see options.  The option to probably use is hls: ./cabal-hls-install hls
+    May take some time to get all the packages it needs the first time it is run.
+    Once the build finishes, link to the created executables (probably created in ~/.cabal/bin/) from somewhere in the path.
+
+Others:
+If it is a library wanted for general usage, such as in ghci, make sure to install with the lib flag:
+cabal install --lib $PACKAGE_NAME
+

@@ -1,5 +1,5 @@
 This file describes the application launchers I use.
-These include gnome-pie, yeganesh, and dmenu.
+These include gnome-pie, rofi, yeganesh, and dmenu.
 
 gnome-pie and dmenu are installable via apt from repositories gnome-pie and suckless-tools.
 yeganesh is a wrapper for dmenu that is installable from cabal: cabal install yeganesh.
@@ -10,5 +10,17 @@ The config files for gnome-pie is in the dotfiles repo.
 Yeganesh will generate it's own frequency map over time.
 gnome-pie is linked into xmobar for some of the menus, and yeganesh and dmenu are bound to keys in xmonad.
 
-TODO: Another thing to explore: Rofi (installable via apt)
+TODO: Another thing to explore: Rofi
+    Rofi also has a frequency map, and easy to explore builtin themes
+    Look into how to install more recent versions of rofi and the extra plugins/extensions/modi.
+    To install from source:
+    clone from git: https://github.com/davatorium/rofi.git
+    dependencies to install (that were not already installed):
+        libxcb-util-dev libxcb-xkb-dev libxkbcommon-x11-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-randr0-dev libxcb-cursor-dev libxcb-xinerama0-dev libstartup-notification0-dev 
+        gitlab-shell flex bison
+    from project root directory:
+        meson setup build
+        ninja -C build
+        sudo ninja -C build install
+    Config in dotfiles.
 

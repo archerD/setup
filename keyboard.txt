@@ -16,4 +16,5 @@ The qmk compile command is also used to generate the firmware in general.
 
 To flash, use qmk flash -kb <my_keyboard> -km <my_keymap>
 For elite c controllers, the bootloader may need to be specified, by adding the arguments -bl dfu
+May want to use the dfu-split-left and dfu-split-right bootloaders to flash the memory with which half of the keyboard it is.
 

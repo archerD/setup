@@ -1,6 +1,6 @@
 # Setup
 This repository contains setup instructions for my machines.
-They assume the installed system is Ubuntu 20.04, the current LTS at the time of writing.
+They assume the installed system is Ubuntu 22.04, the current LTS at the time of writing.
 The os can be downloaded from https://ubuntu.com/download/desktop, and a bootable drive created using usb-creator-gtk on ubuntu, or [rufus](rufus.ie) on windows.
 Installation is then done by booting from the drive, and following instructions.
 

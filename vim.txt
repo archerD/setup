@@ -1,6 +1,12 @@
 Assuming vim has been installed.
 Can be installed using apt, preferably the vim-gtk3 package
 
+TODO: update instructions for neovim
+neovim also installable via apt.
+Configuration in github.com/archerd/dotfiles, in a folder called nvim.
+Still need to configure the lsp, but the configuration install directions are embedded in the files.
+Should come down to running the install script for dotfiles (to link the nvim folder into the .config folder), and running :PackerInstall in nvim (and maybe :PackerCompile).
+
 Download vim configuration:
     git clone https://github.com/archerD/.vim.git
 Alternative download:

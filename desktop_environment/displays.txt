@@ -36,6 +36,6 @@ The redshift program provides a night light mode, see tray.txt.
 
 One other class of programs related to displays are compositors.
 Programs like zoom expect a compositor to be running for annotations.
-A compositor that I use is compton (installable via apt).
+A compositor that I use is picom (installable via apt).
 It can be started when needed and then killed afterwards.
 

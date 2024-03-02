@@ -31,6 +31,7 @@ both are called by the .xsessionrc in dotfiles
 installing just xscreensaver gives a working xscreensaver, however, additional screensavers can be downloaded by installing the following repos from apt: xscreensaver-gl xscreensaver-data-extra
 xscreensaver can be configured by running xscreensaver-demo
 (the xmatrix screensaver, with a low frame rate and mid density is nice)
+    Also investigating using xsecurelock in combination with xss-lock and xset s as a screen locker/saver.
 
 The redshift program provides a night light mode, see tray.txt.
 

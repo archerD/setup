@@ -17,6 +17,7 @@ list of applications not in other files:
     apt  cmatrix
     apt  bible (bible-kjv)
     exec edex-ui (fun piece of software)
+    apt  xclip (should be default installed?)
          lsd (exploring)
 
 key:

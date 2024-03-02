@@ -1,0 +1,7 @@
+Themes are weird.
+Part of the theme is the wallpaper handled by feh.
+The tray and statusbar have their own theming, as does xmonad.
+To theme gtk applications (such as chrome [does this even work?], evince, etc.) use lxappearance (installable via apt).
+Current gtk themes are Yaru-dark for applications with yaru icon set.
+
+At some point I'll figure out a theme, but today is not that day.
